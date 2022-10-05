@@ -1,0 +1,22 @@
+﻿<Window x:Class="Vizuara.TeacherPortal.Shared.ProgressBar" WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vizuara.TeacherPortal.Shared"
+        mc:Ignorable="d"
+        Title="Loading..." Height="60" Width="300">
+    <Grid>
+        <Grid>
+
+            <ProgressBar Minimum="0" Maximum="100" Name="pbStatus"  Margin="10,3,10,3" Foreground="#FF13B931">
+               
+            </ProgressBar>
+            <TextBlock x:Name="ProgressBarText" HorizontalAlignment="Center" VerticalAlignment="Center">
+                
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Window>

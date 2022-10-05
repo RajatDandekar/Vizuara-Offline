@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\Downloads\Downloads.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\FileChooser\ExeDisplayer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\FileChooser\FileChooser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\FileChooser\ImageDisplayer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\FileChooser\PopQuizzesDisplayer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\FileChooser\VideoPlayer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Home\Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Profile\Profile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Shared\ProgressBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Downloads\Downloads.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\FileChooser\ExeDisplayer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\FileChooser\FileChooser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\FileChooser\ImageDisplayer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\FileChooser\PopQuizzesDisplayer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\FileChooser\VideoPlayer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Home\Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Profile\Profile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Shared\ProgressBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,101 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net4.6.2-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Sprites\Icon\VizuaraIcon.ico</ApplicationIcon>
+    <AssemblyName>TeacherPortal</AssemblyName>
+    <RootNamespace>Vizuara.TeacherPortal</RootNamespace>
+    <StartupObject>TeacherPortal_WPF.App</StartupObject>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+	<PlatformTarget>x86</PlatformTarget>
+	  <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
+    <!--<Platforms>AnyCPU;x64</Platforms>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Audio\click.wav" />
+    <None Remove="Sprites\Background\NML.png" />
+    <None Remove="Sprites\Icon\VizuaraIcon.ico" />
+    <None Remove="Sprites\MenuBarUI\Classes_Disabled.png" />
+    <None Remove="Sprites\MenuBarUI\Classes_Selected.png" />
+    <None Remove="Sprites\MenuBarUI\Downloads_Disabled.png" />
+    <None Remove="Sprites\MenuBarUI\Downloads_Selected.png" />
+    <None Remove="Sprites\MenuBarUI\Home_Disabled.png" />
+    <None Remove="Sprites\MenuBarUI\Home_Selected.png" />
+    <None Remove="Sprites\MenuBarUI\Profile_Disabled.png" />
+    <None Remove="Sprites\MenuBarUI\Profile_Selected.png" />
+    <None Remove="Sprites\UI\Box.png" />
+    <None Remove="Sprites\UI\Cross.png" />
+    <None Remove="Sprites\UI\cursor.png" />
+    <None Remove="Sprites\UI\DefaultBack.png" />
+    <None Remove="Sprites\UI\DefaultMenuIcon.png" />
+    <None Remove="Sprites\UI\DefaultPowerIcon.png" />
+    <None Remove="Sprites\UI\Documents.png" />
+    <None Remove="Sprites\UI\Download.png" />
+    <None Remove="Sprites\UI\HomeIcon.png" />
+    <None Remove="Sprites\UI\Loader.png" />
+    <None Remove="Sprites\UI\PauseButton.png" />
+    <None Remove="Sprites\UI\PlayButton.png" />
+    <None Remove="Sprites\UI\Profile.png" />
+    <None Remove="Sprites\UI\Rounded.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Audio\click.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CefSharp.Wpf" Version="105.3.330" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.IO.Compression" Version="4.3.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.17.4" />
+    <PackageReference Include="Vlc.DotNet.Wpf" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Sprites\Background\NML.png" />
+    <Resource Include="Sprites\Icon\VizuaraIcon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\MenuBarUI\Classes_Disabled.png" />
+    <Resource Include="Sprites\MenuBarUI\Classes_Selected.png" />
+    <Resource Include="Sprites\MenuBarUI\Downloads_Disabled.png" />
+    <Resource Include="Sprites\MenuBarUI\Downloads_Selected.png" />
+    <Resource Include="Sprites\MenuBarUI\Home_Disabled.png" />
+    <Resource Include="Sprites\MenuBarUI\Home_Selected.png" />
+    <Resource Include="Sprites\MenuBarUI\Profile_Disabled.png" />
+    <Resource Include="Sprites\MenuBarUI\Profile_Selected.png" />
+    <Resource Include="Sprites\UI\Box.png" />
+    <Resource Include="Sprites\UI\Cross.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\UI\cursor.png" />
+    <Resource Include="Sprites\UI\DefaultBack.png" />
+    <Resource Include="Sprites\UI\DefaultMenuIcon.png" />
+    <Resource Include="Sprites\UI\DefaultPowerIcon.png" />
+    <Resource Include="Sprites\UI\Documents.png" />
+    <Resource Include="Sprites\UI\Download.png" />
+    <Resource Include="Sprites\UI\HomeIcon.png" />
+    <Resource Include="Sprites\UI\Loader.png" />
+    <Resource Include="Sprites\UI\PauseButton.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\UI\PlayButton.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\UI\Profile.png" />
+    <Resource Include="Sprites\UI\Rounded.png" />
+  </ItemGroup>
+</Project>
